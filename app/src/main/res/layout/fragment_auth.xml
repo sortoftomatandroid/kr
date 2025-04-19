@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".fragment.AuthFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Форма входа"
+        android:textAllCaps="true"
+        android:textSize="24sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="32dp"
+        android:background="#000000" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="16dp"
+        android:background="@drawable/stroke"
+        android:hint="Почта"
+        android:inputType="textEmailAddress"
+        android:padding="8dp"
+        android:textColorHint="#000" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/stroke"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:textColorHint="#000" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/auth"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="64dp"
+        android:backgroundTint="#D6F8FE"
+        android:text="Авторизоваться"
+        android:textColor="#000000"
+        app:cornerRadius="8dp"
+        app:strokeColor="#000000"
+        app:strokeWidth="1dp" />
+
+    <TextView
+        android:id="@+id/recover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Забыли пароль?" />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Регистрация" />
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/player_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <!-- Заголовок -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Плеер"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Левая часть: Серия -->
+    <LinearLayout
+        android:id="@+id/series_section"
+        android:layout_below="@id/title"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Серия: "
+            android:textSize="18sp"/>
+
+        <Spinner
+            android:id="@+id/series_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- Правая часть: AnimeVost -->
+    <TextView
+        android:id="@+id/source_label"
+        android:layout_below="@id/title"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="24dp"
+        android:text="AnimeVost"
+        android:textSize="18sp"
+        android:textStyle="italic"/>
+
+    <!-- Плеер -->
+    <FrameLayout
+        android:id="@+id/video_container"
+        android:layout_below="@id/series_section"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/black">
+
+        <!-- Тут можно вставить VideoView или заглушку -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔲 Плеер (заглушка)"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:textSize="20sp"/>
+    </FrameLayout>
+
+    <!-- Нижняя панель -->
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+        <Button
+            android:id="@+id/nav_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Навигация" />
+
+        <Button
+            android:id="@+id/role_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Выбор роли" />
+    </LinearLayout>
+
+
+</RelativeLayout>

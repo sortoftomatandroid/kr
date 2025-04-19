@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_profile"
+    tools:context=".fragment.ProfileFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:layout_marginHorizontal="64dp"
+        android:layout_marginTop="64dp"
+        app:cardCornerRadius="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/avatar" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        tools:layout_editor_absoluteX="64dp"
+        tools:text="Полина Жданова" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="52dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        tools:layout_editor_absoluteX="64dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="-4dp"
+        android:text="Email"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/email" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="292dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
+        android:layout_weight="1"
+        android:background="@drawable/stroke_white"
+        android:paddingStart="22dp"
+        android:paddingTop="2dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line"
+        tools:text="polinazzzzz153@gmail.com" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="-4dp"
+        android:text="Номер\nтелефона"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/phone" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="292dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:layout_weight="1"
+        android:background="@drawable/stroke_white"
+        android:paddingStart="20dp"
+        android:paddingTop="6dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        tools:text="+7(926)-187-13-10" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="7dp"
+        android:text="Возраст"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/age" />
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="292dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:layout_weight="1"
+        android:background="@drawable/stroke_white"
+        android:paddingStart="20dp"
+        android:paddingTop="6dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone"
+        tools:text="18 лет" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="-1dp"
+        android:text="Дата\nвхода"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/date" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="292dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:layout_weight="1"
+        android:background="@drawable/stroke_white"
+        android:paddingStart="20dp"
+        android:paddingTop="6dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/age"
+        tools:text="23.05.2022" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="8dp"
+        android:text="Статус"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/status" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="292dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:layout_weight="1"
+        android:background="@drawable/stroke_white"
+        android:paddingStart="20dp"
+        android:paddingTop="5dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date"
+        tools:text="Ценитель" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/navigation"
+        android:layout_width="155dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/red"
+        android:text="Навигация"
+        android:textSize="16sp"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login"
+        android:layout_width="155dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/red"
+        android:text="Форма входа"
+        android:textSize="16sp"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
